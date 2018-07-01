@@ -1,0 +1,120 @@
+body{
+    display: grid;
+    grid-template-rows: 3;
+    grid-template-areas: "title"
+    "points"
+    "content";
+    text-align: center;
+    width:100%vh;
+    height: 100%vh;
+    background-color: black;
+    color: white;
+}
+.title{
+    grid-area: title;
+}
+.points{
+    grid-area: points;
+}
+.content{
+    grid-area: content;
+    display: grid;
+    grid-gap: 5px;
+}
+.content a{
+    text-decoration: none;
+    height: 8vh;
+    
+}
+
+@media only screen and (max-width: 500px) {
+    .content a{
+        text-decoration: none;
+        height: 6vh;
+    }
+}
+.content a:hover{
+    transform: scale(0.95);
+    transition-duration: 0.4s;
+}
+
+.easy-content{
+    grid-template-columns: 2;
+    grid-template-areas: "a a";
+}
+
+.e1{
+    grid-template-columns: 3;
+    grid-template-areas: "a a a";
+}
+.e2{
+    grid-template-columns: 4;
+    grid-template-areas: "a a a a";
+}
+
+.medium-content{
+    grid-template-columns: 5;
+    grid-template-areas: "a a a a a";
+}
+
+.m1{
+    grid-template-columns: 6;
+    grid-template-areas: "a a a a a a";
+}
+.m2{
+    grid-template-columns: 7;
+    grid-template-areas: "a a a a a a a";
+}
+
+.pro-content{
+    grid-template-columns: 8;
+    grid-template-areas: "a a a a a a a a";
+}
+.p1{
+    grid-template-columns: 9 ;
+    grid-template-areas: "a a a a a a a a a";
+}
+
+.p2{
+    grid-template-columns: 10 ;
+    grid-template-areas: "a a a a a a a a a a";
+}
+
+
+.inst-content{
+    grid-template-columns: 2;
+    grid-template-areas: "a a";
+    padding: 30px;
+}
+hr{
+    width: 100%;
+border-color:white;
+}
+
+
+@keyframes scale { 
+    from { transform: scale(0.95); } 
+  }
+  
+  .animate-flicker {
+      animation: scale 0.2s infinite alternate;
+  }
+
+  .start{
+background-color: rgb(91, 189, 91);
+padding: 20px;
+
+border-radius: 20px;
+  }
+
+  .start a{
+      text-decoration: none;
+      color: white; 
+      font-size: 20px;
+      
+  }
+  .start:hover{
+      transform: scale(1.2);
+      opacity: 0.9;
+      transition-duration: 1s;
+  }

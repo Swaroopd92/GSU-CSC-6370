@@ -1,0 +1,77 @@
+body{
+    background-color: #f0ead6;
+    background-repeat: no-repeat;
+    display: grid;
+    margin:0;
+    grid-template-rows: 3;
+    grid-template-areas: "main"
+    "buttons"
+    "inst";
+}
+
+.main{
+    grid-area: main;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.main h1{
+    color: cornflowerblue;
+    font-weight: 2000;
+    font-size: 50px;
+}
+.buttons{
+    grid-area: buttons;
+    display: grid;
+    grid-template-columns: 3;
+    
+    
+    grid-template-areas: "btn btn btn";
+}
+.inst{
+    grid-area: inst;
+    justify-self: center;
+    
+}
+.buttons a,#again{
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    display: block;       
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#easy,#again{
+    background-color: rgb(148, 230, 148);
+    
+    
+}
+#med{
+    background-color: aqua;
+    
+    
+}
+#pro{
+    background-color: coral;
+    
+    
+}
+#inst{
+    padding: 20px;
+    background-color: cadetblue;
+    color:white;
+}
+
+a:hover{
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+    opacity: 0.8;
+}
