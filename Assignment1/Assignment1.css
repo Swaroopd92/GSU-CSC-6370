@@ -1,0 +1,7 @@
+h1 {text-align: center;}
+tr.orange {background-color: #cdffff;}
+tr.yellow {background-color: #b0c4de;}
+body {background-color: #F0EAD6; font-family: Sans-Serif; border:2px solid #129793; padding: 5px;}
+a:hover {background-color: #ff7260;}
+span {color: red; font-weight: bold;}
+#center {display: block; margin: auto;}
