@@ -1,0 +1,6 @@
+body {border: 0px;margin: auto; margin-left: 10%; margin-right: 10%;background-image: url("Capture.png");}
+#green {border: 5px green solid;background-color: white;}
+div.blue {border: 5px blue solid; background-color: #E8FBFB;padding: 5px 5px 5px 5px;margin: 10px 0px 0px 0px;}
+#red {border: 5px red solid;}
+#orange {border: 5px orange solid;}
+span.purple {border: 5px purple solid;}
