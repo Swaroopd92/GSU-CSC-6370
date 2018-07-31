@@ -1,0 +1,33 @@
+#homepage {
+	background: url(flight7.png);
+	width: 800px;
+	font-size: 18px;
+	height: 600px;
+	border-radius: 15px 50px;
+    padding: 20px; 
+}
+
+h4 {
+	font-weight: bold;
+}
+#button1 {
+  background-color: #A9A9A9;
+  width: 250px;
+}
+#button2 {
+  background-color: #A9A9A9;
+  width: 250px;
+}
+#button3 {
+  background-color: #A9A9A9;
+  width: 250px;
+}
+.btn-reload {
+  background-color: #FF0000;
+  width: 200px;
+  color: white;
+}
+
+#headerAirline{
+	background-color: #C2DFFF;
+}
