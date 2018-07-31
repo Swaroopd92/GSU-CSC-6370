@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>Fifteen Puzzle</title>
+</head>
+<body onload="onRestart(-1)">
+<div id="title">
+<h1>Fifteen Puzzle</h1>
+<h4>Note 1:You can select your background image for your puzzle, or you can use the random image.Press new Game to apply</h4>
+<h4>Note 2:You can change your puzzle difficulty by select a dimension and click new game.</h4>
+<h4>Note 3:You can click shuffle button to random shuffle your puzzle and start your game.</h4>
+</div>
+<div id="imgSelect">
+<label>
+    <input class="raidoButton" type="radio" id="bgButton1" checked="checked" value="background.jpg" onclick="pictureSelect(this)"/>
+    <img src="background.jpg" alt="bg1" id="bg"/>
+</label>
+<label>
+    <input class="raidoButton" type="radio" id="bgButton2" checked="checked" value="background1.jpg" onclick="pictureSelect(this)"/>
+    <img src="background1.jpg" alt="bg2" id="bg1">
+</label>
+<label>
+    <input class="raidoButton" type="radio" id="bgButton3" checked="checked"  value="background2.jpg" onclick="pictureSelect(this)"/>
+    <img src="background2.jpg" alt="bg3" id="bg2">
+</label>
+<label>
+    <input class="raidoButton" type="radio" id="bgButton4" checked="checked"  value="background3.jpg" onclick="pictureSelect(this)"/>
+<img src="background3.jpg" alt="bg4" id="bg3">
+</label>
+</div>
+<div id="buttonGroup">
+<select id="dem">
+<option>4X4</option>
+<option>6X6</option>
+<option>8X8</option>
+</select>
+<button class="buttons" onclick="onRestart(-2)">new game!</button>
+<p id="timer" >Timer:</p> 
+</div>
+<div id="tableDiv">
+</div>
+<div id="shuffleBt">
+<button onclick="onRestart(-3); timerStart();" class="buttons" >shuffle</button>
+<button onclick="finish1()" class="buttons">End-game</button>
+</div>
+<div id="links">
+    <img src="jsLint.png"  alt="lint" id="lint" onclick="goTo(this)">
+    <img src="css.png" alt="css" id="css" onclick="goTo(this)"> 
+    <img src="html.png" alt="html" id="html" onclick="goTo(this)">
+</div>
+<script src="JSproject4.js"></script>
+</body>
+</html>
